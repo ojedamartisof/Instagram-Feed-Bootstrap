@@ -1,0 +1,31 @@
+.img-resize{
+    padding: 3px;
+    text-align: center;
+    object-fit: cover;
+    height: 400px;
+  }
+  .col-4{
+    text-align: center;
+  }
+  .nav{
+    margin: auto;
+    padding: 10px;
+  }
+  a.active.nav-link{
+    background-color: #a6a6a6!important;
+    color: grey;
+  }
+  .card{
+    padding: 5px;
+    margin-top: 20px;
+  }
+  .fecha{
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+  }
+  .titulo{
+    width: 74%;
+    display: inline-block;
+    text-align: left;
+  }

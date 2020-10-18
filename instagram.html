@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Instagram Feed</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="http://www.transparentpng.com/thumb/logo-instagram/zI6ZGS-black-logo-instagram-png-transparent.png"
+                width="30" height="30" alt="Instagram Logo">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-text-black-png.png" width="90"
+                height="30" alt="Instagram letters">
+        </a>
+        <form class="form-inline">
+            <button class="btn btn-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#createpost">
+                Create a new post
+            </button>
+            <div class="modal fade" id="createpost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <textarea class="form-control" id="message-text"
+                                    style="margin-top: 0px; margin-bottom: 0px; width: 100%; height: 100px;"></textarea>
+                            </div>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fas fa-camera"></i>
+                            </a>
+                            <a class="btn btn-outline-secondary">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log out</a>
+                </div>
+            </div>
+        </form>
+    </nav>
+    <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link text-dark active" id="pills-grid-tab" data-toggle="pill" href="#pills-grid" role="tab"
+                aria-controls="pills-grid" aria-selected="true">
+                <i class="fas fa-th"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab"
+                aria-controls="pills-list" aria-selected="false">
+                <i class="fas fa-square"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://www.hola.com/imagenes/estar-bien/20200715172068/razas-de-perro-medianas-boxer/0-847-78/boxer-t.jpg"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://lh3.googleusercontent.com/proxy/-WYy7v0pVbGQcW8G9GHuJOKFMwBIdtRjc7kHBtb_JGwSnk5uLGcCE5jIBkziQOM0AYyPYsB0KXC8LIO9AkkhuDXfjGaABqYi2gAA6IhC1vwtf30sy93VhkSi7eQmm4BNEn4j3NM"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://mochilerosentailandia.com/wp-content/uploads/2015/06/lipe.jpg"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://i1.wp.com/africanelephantjournal.com/wp-content/uploads/2019/04/3ac2e367385a4a378fb5cf7fc58d8ebc.jpg?fit=3479%2C1957&ssl=1"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/1d/ad/c3/orlando.jpg"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://petsgetstarted.com/wp-content/uploads/2019/12/boxer-3399598_1920-1024x683.jpg"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://iambaker.net/wp-content/uploads/2018/02/lemonpie-BLOG-1200x720.jpg"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://e-shopy.org/wp-content/uploads/2020/08/shop.jpeg" class="img-fluid img-resize"
+                            alt="">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://palomasala.com/wp-content/uploads/2020/08/modalidades-de-entrenamiento-en-running-entrenamiento-continuo.jpeg"
+                            class="img-fluid img-resize" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" style="background-color: #d6d6d6;" id="pills-list" role="tabpanel"
+            aria-labelledby="pills-list-tab">
+            <div class="container">
+                <div class="card border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">My Pet</h5>
+                        <h5 class="text-secondary fecha">7/23</h5>
+                    </div>
+                    <img src="https://www.hola.com/imagenes/estar-bien/20200715172068/razas-de-perro-medianas-boxer/0-847-78/boxer-t.jpg"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">Love Berries!</h5>
+                        <h5 class="text-secondary fecha">25/11</h5>
+                    </div>
+                    <img src="https://lh3.googleusercontent.com/proxy/-WYy7v0pVbGQcW8G9GHuJOKFMwBIdtRjc7kHBtb_JGwSnk5uLGcCE5jIBkziQOM0AYyPYsB0KXC8LIO9AkkhuDXfjGaABqYi2gAA6IhC1vwtf30sy93VhkSi7eQmm4BNEn4j3NM"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">My favourite travel</h5>
+                        <h5 class="text-secondary fecha">15/11</h5>
+                    </div>
+                    <img src="https://mochilerosentailandia.com/wp-content/uploads/2015/06/lipe.jpg"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">Elephants</h5>
+                        <h5 class="text-secondary fecha">13/9</h5>
+                    </div>
+                    <img src="https://i1.wp.com/africanelephantjournal.com/wp-content/uploads/2019/04/3ac2e367385a4a378fb5cf7fc58d8ebc.jpg?fit=3479%2C1957&ssl=1"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">Sunset</h5>
+                        <h5 class="text-secondary fecha">18/10</h5>
+                    </div>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/1d/ad/c3/orlando.jpg"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">Chill</h5>
+                        <h5 class="text-secondary fecha">18/10</h5>
+                    </div>
+                    <img src="https://petsgetstarted.com/wp-content/uploads/2019/12/boxer-3399598_1920-1024x683.jpg"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">Mmm...delicious</h5>
+                        <h5 class="text-secondary fecha">18/9</h5>
+                    </div>
+                    <img src="https://iambaker.net/wp-content/uploads/2018/02/lemonpie-BLOG-1200x720.jpg"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">Shopping TIME</h5>
+                        <h5 class="text-secondary fecha">16/10</h5>
+                    </div>
+                    <img src="https://e-shopy.org/wp-content/uploads/2020/08/shop.jpeg" class="card-img-top img-fluid"
+                        alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-white border-white" style="width: 1000px;">
+                    <div class="card-header bg-white">
+                        <h5 class="card-title titulo">Running :(</h5>
+                        <h5 class="text-secondary fecha">26/9</h5>
+                    </div>
+                    <img src="https://palomasala.com/wp-content/uploads/2020/08/modalidades-de-entrenamiento-en-running-entrenamiento-continuo.jpeg"
+                        class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5><i class="fas fa-heart"></i><span>Liked by <strong> 4GeeksAcademy, html5, Web</strong> and
+                                <strong>100,000 others </strong></span></h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0805582109.js" crossorigin="anonymous">
+  </body>
+</html>
